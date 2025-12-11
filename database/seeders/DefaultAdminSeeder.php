@@ -11,9 +11,9 @@ class DefaultAdminSeeder extends Seeder
     public function run(): void
     {
         User::updateOrCreate(
-            ['email' => 'admin@jobportal.test'],
+            ['email' => 'admin@admin.com'],
             [
-                'name' => 'Admin Portal',
+                'name' => 'Admin',
                 'password' => Hash::make('password'),
                 'role' => 'admin',
             ]
